@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+}
+html{
+    background-color:var(--bg-primary-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--text-primary-color);
+
+}
+main {
+    width: 100%;
+}
+main section {
+    width: 100%;
+    padding: var(--padding-xxl);
+    display: flex;
+    gap: var(--gutter-lg);
+   
+}
+.btn {
+    padding: var(--padding-sm) var(--padding-lg);
+    border: none;
+    outline: none;
+    border-radius:var(--border-radius-md);
+    background-color: var(--bg-active-color);
+    cursor: pointer;
+    color: var(--text-active-color);
+}
+#reset-btn{
+    background-color: var(--bg-reset-color);
+}
+
+
+
+main section .top{
+    display: flex;
+    align-items: center;
+    gap: var(--gutter-md);
+}
+main section .left{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-lg);
+    width: 70%;
+    align-items: center;
+}
+main section .right{
+    width: 30%;
+    background-color:var(--bg-secondary-color);
+    padding: var(--padding-lg);
+    border-radius: var(--border-radius-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-md);
+
+}
+main section .bottom{
+    width: 100%;
+    padding: var(--padding-xxl);
+    aspect-ratio: 5/3;
+    background-color:var(--bg-secondary-color);
+    border-radius: var(--border-radius-xl);
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+
+main section .bottom .placeholder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.6;
+    align-self: center;
+}
+main section .bottom .placeholder i {
+    font-size: 10rem;
+}
+main section .bottom .placeholder p {
+    font-size: var(--font-size-md);
+}
+
+
+main section .right .filters{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-md);
+}
+main section .right .filter{
+    width: 100%;
+}
+main section .right .filter input{
+    width: 100%;
+    outline: none;
+    margin-top: var(--margin-sm);
+    appearance: none;
+}
+main section .right .filter input::-webkit-slider-runnable-track {
+    height: 4px;
+    background-color: var(--bg-active-color);
+    border-radius: 2px;
+}
+main section .right .filter input::-moz-range-track {
+    height: 4px;
+    background-color: var(--bg-active-color);
+    border-radius: var(--border-radius-md);
+}
+main section .right .filter input::-webkit-slider-thumb {
+    cursor: pointer;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: brown;
+    margin: -8.5px;
+}
+canvas{
+    max-width:90%;
+    max-height:80vh; 
+    display: none;
+}
+.presets{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gutter-md);
+    margin-top: var(--margin-lg);
+}
+
+
+
+
+
+#download-btn{
+    background-color: var(--bg-success-color);
+    color: var(--bg-primary-color);
+}
